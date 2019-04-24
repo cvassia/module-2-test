@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  margin-top: 22em;
+}
+
+main ol {
+  color: blue;
+}
+
+/* Images Task */
+
+.background {
+  width: 30em;
+  height: 22em;
+  background-image: url(images/tree.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+img[alt="Image 3"] {
+  padding: 1em;
+  border: 2px solid blue;
+}
+
+/* Nth-child */
+
+span:nth-child(even) {
+  background-color: grey;
+}
+
+/* Media Query Task */
+
+.mediaquery {
+  background-color: blue;
+  background-size: 5rem 5rem;
+}
+
+@media (min-width: 768px) {
+  .mediaquery {
+    background-color: yellow;
+    background-size: 7rem 7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mediaquery {
+    background-color: red;
+    background-size: 10rem 10rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .mediaquery {
+    background-color: purple;
+    background-size: 12rem 12rem;
+  }
+}
+
+/* Positioning Task */
+
+.relative {
+  position: relative;
+  left: 10em;
+}
+
+.absolute {
+  position: absolute;
+  top: 5em;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Flexbox Task */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.item {
+  display: flex;
+  flex-grow: 3;
+}
+
+/* Grid Layout Task */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 5px;
+  border: 2px solid rebeccapurple;
+}
+
+.wrapper .cell {
+  border: 1px solid rgb(170, 119, 221);
+}
+
+.two {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.three {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.seven {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+/* Footer, h3 Elements with changed font color, font size and font family */
+
+.changed-h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  color: brown;
+}
+
+footer ul {
+  margin: 0 auto;
+}
+
+footer li,
+footer a {
+  display: inline-flex;
+  text-decoration: none;
+  padding-left: 3em;
+}
+a h3:hover {
+  color: rgb(226, 192, 43);
+}
+a:visited {
+  color: rgb(43, 226, 119);
+}
+
+/* strike out ALL the TASKS */
+main li {
+  text-decoration: line-through;
+}
